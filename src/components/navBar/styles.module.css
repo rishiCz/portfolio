@@ -1,0 +1,15 @@
+.navBar{
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+}
+.navBar button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 1.6em;
+    color: white;
+}
+.navBar button:focus{
+    border: 1px solid grey;
+}
