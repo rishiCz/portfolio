@@ -1,0 +1,52 @@
+.homeMain h1 {
+  font-size: 2.7em;
+  font-weight: 500;
+}
+.gradient {
+  background: linear-gradient(90deg, #5200ff, #bf00ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.subHead {
+  display: flex;
+  margin-left: -12px;
+}
+.subHead label {
+  color: #5200ff;
+}
+.subHead p {
+  font-size: 1.2em;
+  margin: 0;
+  margin-left: 5px;
+}
+.subHead p label {
+  color: #ff00b8;
+}
+.btn {
+  margin-left: 50px;
+  height: fit-content;
+  background-image: linear-gradient(#5200ff 0%, #ff00b8 100%);
+  border-radius: 40px;
+  color: white;
+  font: 1.5em "Oswald", Arial, sans-serif; /*18*/
+  letter-spacing: 3px;
+  padding: 3px;
+  cursor: pointer;
+  transition: background 0.5s ease;
+}
+
+.btn span {
+  padding: 10px 25px;
+  align-items: center;
+  background: #000000;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: fit-content;
+}
+
+.btn:hover {
+  background: #5200ff;
+}

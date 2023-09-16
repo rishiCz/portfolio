@@ -1,0 +1,44 @@
+.education {
+  background-color: black;
+  width: 88%;
+  height: 55vh;
+  display: flex;
+  padding: 6%;
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.education > div {
+  text-align: start;
+  height: 40%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.education hr {
+  width: 100%;
+}
+.education > div h3 {
+  flex-basis: 100%;
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 500;
+  height: fit-content;
+}
+.education > div i {
+  margin: 0px;
+  height: fit-content;
+  align-self: flex-start;
+  margin-top: -20px;
+  font-size: 1.2em;
+  color: rgb(176, 176, 176);
+}
+.flex {
+  align-self: flex-end;
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.flex label {
+  font-weight: 600;
+  font-size: 1.5em;
+}
