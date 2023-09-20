@@ -16,10 +16,21 @@
 }
 .flex > div > label {
   font-size: 2.8em;
-  color: #d5d5d5;
+  color: #000000;
 }
 .flex > div {
   margin-top: 20px;
   flex-basis: 48%;
   text-align: center;
+}
+.gradient1{
+  background: linear-gradient(135deg,#5200ff, red );
+  padding: 3px;
+  border-radius: 20px;
+  height: 552px;
+}
+.gradient2{
+  background: linear-gradient(135deg, #5200ff 0%,  #ff00b8 130%);
+  padding: 3px;
+  border-radius: 20px;
 }

@@ -13,7 +13,7 @@ const projectData = {
         "Incorporated charts to facilitate easy comparison of GDP values among neighboring countries, demonstrating a strong focus on user-centric design.",
       ],
       image: p1,
-      codeLink: "github.com/rishiCz/world-data",
+      codeLink: "https://github.com/rishiCz/world-data",
       liveLink: "https://rishicz.github.io/world-data/",
     },
     {
@@ -25,8 +25,8 @@ const projectData = {
         "Integrated routing to enable smooth navigation between the home and cart pages, enhancing overall usability.",
       ],
       image: p2,
-      codeLink: "github.com/rishiCz/bakery-app",
-      liveLink: "rishicz.github.io/bakery-app/",
+      codeLink: "https://github.com/rishiCz/bakery-app",
+      liveLink: "https://rishicz.github.io/bakery-app/",
     },
     {
       title: "News Hub",
@@ -36,9 +36,10 @@ const projectData = {
         "Introduced a unique feature allowing users to create custom news templates with buttons, adding a personalized touch to the app.",
       ],
       image: p3,
-      codeLink: "github.com/rishiCz/News-App",
+      codeLink: "https://github.com/rishiCz/News-App",
       liveLink: null,
     },
+    
   ],
 };
 export default projectData;

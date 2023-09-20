@@ -1,6 +1,5 @@
 import Education from "../education";
 import Expeience from "../experience";
-import GradientDiv from "../gradientDiv";
 import styles from "./styles.module.css";
 
 const AboutMain = () => {
@@ -8,24 +7,13 @@ const AboutMain = () => {
     <div className={styles.aboutMain}>
       <h1>About Me</h1>
       <div className={styles.flex}>
-        <div>
+        <div className={styles.gradient1}>
           <label>EDUCATION</label>
-          <GradientDiv
-            Content={Education}
-            width="100%"
-            deg={"0deg"}
-            perc1="10%"
-            borderRadius="20px"
-          />
+            <Education/>
         </div>
-        <div>
+        <div className={styles.gradient2}>
           <label>EXPERIENCE</label>
-          <GradientDiv
-            Content={Expeience}
-            width="100%"
-            perc2="150%"
-            borderRadius="20px"
-          />
+            <Expeience/>
         </div>
       </div>
     </div>
