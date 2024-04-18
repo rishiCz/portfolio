@@ -1,0 +1,71 @@
+.challengeMain h1{
+    font-size: 2.5em;
+    font-weight: 500;
+    padding-top: 50px;
+    text-align: center;
+}
+.challengeMain h2{
+    text-align: center;
+    font-weight: 700;
+    color: #c3c3c3;
+}
+.security{
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 70%;
+    height: 35vh;
+    margin: auto;
+    max-height: 50vh;
+}
+.parent{
+    background-color: #ffffff0a;
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+    backdrop-filter:  sepia(10) hue-rotate(200deg);
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+.child{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    color:rgb(255, 255, 255);
+    text-shadow: 0 0 20px black;
+    border-radius: inherit;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 40px;
+    height: 60px;
+    width: 100px;
+    background: linear-gradient(90deg,#3300ff,#ff0048);
+}
+.inputHolder{
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: black;
+    width: 66%;
+    border-radius: 20px;
+    height: 34vh;
+    padding: 2%;
+}
+.inputHolder p{
+    margin:0;
+    padding: 0;
+}
+.inputHolder textarea{
+    padding-left: 20px;
+    width: 90%;
+    outline: none;
+    border: none;
+    resize: none;
+    height: 60%;
+    color: white;
+    background-color: black;
+    outline: none;
+}
+.inputHolder>div{
+    height: 90%;
+}

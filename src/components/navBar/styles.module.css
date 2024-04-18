@@ -1,16 +1,26 @@
 .navBar{
+    margin-right: 20px;
+    padding-top: 10px;
     display: flex;
-    width: 40%;
+    width: 30%;
     justify-content: space-evenly;
+    z-index: 4;
+    /* align-items: center; */
 }
+
 .navBar button{
     outline: none;
     border: none;
+    /* height: fit-content; */
     background-color: transparent;
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: white;
-    align-self: flex-end;
+    transition: all 200ms ease;
+    cursor: pointer;
+    margin-top: -5px;
+    margin-bottom: 10px;
 }
-.navBar button:focus{
-    border: 1px solid grey;
+
+.navBar button:hover{
+    scale: 1.1;
 }

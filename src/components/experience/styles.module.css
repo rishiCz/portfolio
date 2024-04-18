@@ -1,56 +1,6 @@
-.experience {
-  background-color: black;
-  width: 88%;
-  padding: 6%;
-  border-radius: 20px;
-}
-.experience > div {
-  text-align: start;
-}
-.experience hr {
+.experienceHolder{
+  display: flex;
+  gap: 20px;
   width: 100%;
-}
-.flex h3 {
-  margin: 0;
-  font-size: 1.5em;
-  font-weight: 500;
-  height: fit-content;
-}
-.experience > div i {
-  margin: 0px;
-  height: fit-content;
-  align-self: flex-start;
-  margin-top: -20px;
-  font-size: 1.2em;
-  color: rgb(176, 176, 176);
-}
-.skills {
-  margin-top: 10px;
-  width: 70%;
-  display: flex;
-  justify-content: space-between;
-}
-.skills > a {
-  text-decoration: none;
-  color: white;
-  cursor: pointer;
-  border: 2px solid;
-  border-radius: 20px;
-  border-color: #02af1f;
-  padding: 5px 8px;
-}
-.skills > a:hover{
-  scale: 1.1;
-  color: black;
-  background-color: #02af1f;
-}
-.flex {
-  flex-basis: 100%;
-  height: fit-content;
-  display: flex;
-  justify-content: space-between;
-}
-.flex label {
-  height: fit-content;
-  font-size: 1.2em;
+  margin: auto;
 }

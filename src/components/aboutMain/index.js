@@ -5,14 +5,13 @@ import styles from "./styles.module.css";
 const AboutMain = () => {
   return (
     <div className={styles.aboutMain}>
-      <h1>About Me</h1>
       <div className={styles.flex}>
-        <div className={styles.gradient1}>
-          <label>EDUCATION</label>
+        <div >
+          <label>Education</label>
             <Education/>
         </div>
-        <div className={styles.gradient2}>
-          <label>EXPERIENCE</label>
+        <div >
+          <label>Experience</label>
             <Expeience/>
         </div>
       </div>

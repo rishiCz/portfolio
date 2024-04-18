@@ -1,31 +1,37 @@
 .education {
-  background-color: black;
+  background-color: #1d232e;
   width: 88%;
-  height: 429px;
+  height: 77.3%;
   display: flex;
   padding: 6%;
-  border-radius: 20px;
-  flex-direction: column;
-  justify-content: space-between;
+  margin-top: 3px;
+  border-radius: 8px;
+  
 }
-.education > div {
+.main{
+  width: 58%;
+  margin: auto;
+  
+}
+.inner {
   /* background: rgb(143, 0, 0); */
   text-align: start;
-  height: 40%;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  gap: 20px;
 }
 .education hr {
   width: 100%;
 }
-.education > div h3 {
+.inner h3 {
   flex-basis: 100%;
   margin: 0;
   font-size: 1.5em;
   font-weight: 500;
   height: fit-content;
 }
-.education > div i {
+.inner i {
   margin: 0px;
   height: fit-content;
   align-self: flex-start;
@@ -34,6 +40,8 @@
 }
 .flex {
   align-self: flex-end;
+  width: 100%;
+  flex-direction: row;
   flex-basis: 100%;
   display: flex;
   justify-content: space-between;

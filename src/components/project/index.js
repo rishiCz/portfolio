@@ -10,17 +10,16 @@ const Project = ({
   liveLink,
   flip = false,
 }) => {
-  const imageRef = useRef(null);
-  const backRef = useRef(null);
+  const myRef = useRef(null);
   const { scrollYProgress } = useScroll({
-    target: imageRef,
-    offset: ["0 1", "1.33 1"],
+    target: myRef,
+    offset: ["0 1", "1.33 1"]
   });
   const backTransform = useTransform(scrollYProgress,[0.3,1],["40%","-40%"])
+  const gradTransform = useTransform(scrollYProgress,[0.3,1],['0%','-100%'])
+  const pGradTransform = useTransform(scrollYProgress,[0.4,0.6],['-100%','0%'])
   const opacityTransform = useTransform(scrollYProgress,[0,0.6],[0, 1])
   const backOpacityTransform = useTransform(scrollYProgress,[0,1],[0.6, 0])
-  const imageTransform = useTransform(scrollYProgress,[0,0.6],[flip?-200:200,0])
-  const textTransform = useTransform(scrollYProgress,[0,0.6],[flip?200:-200,0])
   const filter = useTransform(opacityTransform, v => `blur(${v*25 +2}px)`);
   const Image = () => {
     
@@ -36,18 +35,18 @@ const Project = ({
   
   return (
     <motion.div
-      ref={imageRef}
+      ref={myRef}
       className={styles.projectHolder}
       style={{ flexDirection: flip ? "row-reverse" : "row"}}
     >
       <motion.img src={imgSrc} alt={title} style={{opacity: backOpacityTransform,filter}} />
       <motion.div style={{y:backTransform}}>
-        <h2>{title}</h2>
+        <motion.h2 style={{backgroundPositionX: gradTransform}}>{title} |</motion.h2>
         {description.map((point, index) => {
           return (
-            <p>
-              {index + 1}. {point}
-            </p>
+            <motion.p key={index} style={{backgroundPositionX: pGradTransform, backgroundSize: `${200+index*30}%`}}>
+               {point}
+            </motion.p>
           );
         })}
         <div className={styles.flex}>

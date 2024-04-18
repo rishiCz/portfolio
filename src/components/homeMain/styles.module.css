@@ -2,6 +2,48 @@
   font-size: 2.7em;
   font-weight: 500;
 }
+.linksHolder{
+  z-index: 3;
+  border-radius: 10px;
+  padding:10px 0;
+  padding-left: 10px;
+  background-color: #0000004b;
+  backdrop-filter: blur(100px);
+  position: fixed;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  font-size: 2em;
+}
+.linksHolder>hr{
+  margin: 15px ;
+  align-self: flex-start;
+  width: 1px;
+  height: 20px;
+  background-color: #ff00b76a;
+  outline: none;
+  border: none;
+}
+.linksHolder>a{
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  color: #353b47;
+}
+.linksHolder>a:hover{
+  color: #a9bbdd;
+}
+.linksHolder>a>label{
+  padding-left: 10px;
+  display: block;
+  width: 0;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.linksHolder>a:hover >label{
+  width: 150px;
+}
 .gradient {
   background: linear-gradient(90deg, #5200ff, #bf00ff);
   -webkit-background-clip: text;
