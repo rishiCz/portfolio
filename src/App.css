@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+.gradient-text{
+    background:  linear-gradient(90deg, #5200ff, #bf00ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.theme-gradient{
+    background:  linear-gradient(90deg, #5200ff, #bf00ff);
+}
+
+.bg-shadow-rev{
+    background:  linear-gradient(180deg, #000000, rgba(191, 0, 255, 0));
+}
+.bg-shadow{
+    background:  linear-gradient(0deg, #000000c0, rgba(191, 0, 255, 0) 100%);
+}
+
+.text-blue1{
+    color: #5200ff;
+}
+.text-pink1{
+    color: #bf00ff;
+}
+
+button{
+    cursor: pointer;
+}
